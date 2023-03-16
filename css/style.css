@@ -15,7 +15,7 @@
 .menu {
     display: flex;
     text-align: center;
-    background: yellow;
+    /* background: rgb(166, 166, 157); */
     justify-content: center;
     font-size: 18px;
     gap: 30px;
@@ -23,7 +23,7 @@
 }
 .menu > li {
     text-transform: uppercase;
-    background: orange;
+    /* background: orange; */
     position: relative;
 }
 .menu > li:hover .second-ul{
@@ -344,6 +344,7 @@
     position: relative;
     z-index: 1;
     font-size: 0;
+    /* margin-top: 50px; */
 }
 /* .flex {
     display: flex;
@@ -353,6 +354,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 .gallery-text{
     background: rgba(0,0,0,0.5);
     width: 100%;
@@ -371,4 +373,33 @@
     display: block;
     /* box-shadow: black; */
     /* color: aqua; */
+}
+
+/* ***************************** */
+
+
+.footer{
+    background: red;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+.flex-footer {
+    display: flex;
+    justify-content: center;
+}
+.flex-footer li + li {
+    margin-left: 25px;
+}
+
+.footer-icon {
+    fill: aqua;
+    width: 30px;
+    height: 30px;
+}
+.footer-icon:hover {
+    fill: black;
 }
