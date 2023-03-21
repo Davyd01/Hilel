@@ -27,9 +27,7 @@
     font-size: 18px;
     /* display: inline-block; */
 }
-.menu > li:hover .second-ul{
-    display: block;
-}
+
 .menu a:hover svg, .menu a:hover span {
     fill: #01c7dd;
     color: #01c7dd;
@@ -38,7 +36,7 @@
     color: rgb(34, 31, 34);
     text-decoration: none;
     padding: 10px 25px;
-    display: block;
+    /* display: block; */
     /* position: relative; */
 }
 .menu .active {
@@ -66,12 +64,18 @@
     /* padding: 10px 0 0; */
     position: absolute;
     z-index: 2;
-    top: 100%;
-    left: 0;
+    top: -1000%;
+    left: -1000%;
     background: bisque;
-    display: none;
+    /* display: none; */
     width: 100%;
     font-family: 'Asap Condensed';
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu > li:hover .second-ul{
+    /* display: block; */
+    top: 100%;
+    left: 0;
 }
 /* .second-ul a {
     border: 1px solid black;
@@ -85,6 +89,9 @@
     background: bisque;
     font-family: 'Roboto';
 }
+.second-ul > li {
+    padding: 10px 0;
+}
 .second-ul  a:hover {
     color: #01c7dd;
 }
@@ -97,6 +104,9 @@
 .left-arrow {
     width: 15px;
     height: 15px;
+}
+.amelia {
+    padding: 10px 0;
 }
 
 
