@@ -7,10 +7,18 @@
 
 /* header */
 .header{
-    background: rgb(223, 201, 201);
+    background: rgb(61, 54, 48);
     padding: 30px 0;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
+}
+.main {
+    flex: 1;
+}
 .menu {
     display: flex;
     text-align: center;
@@ -29,19 +37,19 @@
 }
 
 .menu a:hover svg, .menu a:hover span {
-    fill: #01c7dd;
-    color: #01c7dd;
+    fill: #ffffff;
+    color: #ffffff;
 }
 .menu a {
-    color: rgb(34, 31, 34);
+    color: #7f75a5;
     text-decoration: none;
     padding: 10px 25px;
     /* display: block; */
     /* position: relative; */
 }
 .menu .active {
-    fill: rgb(181, 21, 225);
-    color:rgb(181, 21, 225);
+    fill: rgb(222, 16, 16);
+    color:rgb(222, 16, 16);
 }
 /* .menu span {
     padding: 10px 0 10px 10px;
@@ -49,7 +57,7 @@
 .head-icon {
     height: 35px;
     width: 35px;
-    fill: rgb(34, 31, 34);
+    fill: #7f75a5;
     /* position: absolute;
     top: 0;
     left: 0; */
@@ -66,7 +74,7 @@
     z-index: 2;
     top: -1000%;
     left: -1000%;
-    background: bisque;
+    background: rgb(61, 54, 48);
     /* display: none; */
     width: 100%;
     font-family: 'Asap Condensed';
@@ -86,14 +94,15 @@
     z-index: 1;
     right: 100%;
     top: 0;
-    background: bisque;
+    background: rgb(61, 54, 48);
     font-family: 'Roboto';
 }
 .second-ul > li {
     padding: 10px 0;
+    font-size: 25px;
 }
 .second-ul  a:hover {
-    color: #01c7dd;
+    /* color: #303839; */
 }
 .second-ul > li:hover .site-amelia {
     display: block;
@@ -107,6 +116,9 @@
 }
 .amelia {
     padding: 10px 0;
+}
+.left-arrow {
+    fill: #7f75a5;
 }
 
 
@@ -416,18 +428,18 @@
 /* ***************************** */
 
 
-.footer{
+/* .footer{
     background: rgb(223, 201, 201);
-    padding: 20px;
+    padding: 20px; */
     /* position: fixed; */
-    bottom: 0;
+    /* bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100%; */
     /* z-index: 5; */
     /* margin-bottom: 50px; */
     /* просто потренировался прибить футер ко дну */
     /* Не понимаю как сделать чтобы футер не перекрывал контент на других страницах (float,cards,gallery и тд) возможно просто забыл */
-}
+/* }
 .flex-footer {
     display: flex;
     justify-content: center;
@@ -449,18 +461,130 @@
     display: block;
 
 }
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-}
-.main {
-    flex: 1;
-}
-
 
 .head-icon {
     width: 50px;
     height: 50px;
+} */
+
+
+
+/* ! ****************** */
+
+/* 
+.footer {
+    border: 1px solid red;
+    position: fixed;
+    bottom: 0%;
+    right: 150px;
+    padding: 20px 20px;
+    background: blue;
+    width: 300px;
+}
+
+.fixed-menu-title {
+    color: #01c7dd;
+    padding: 10px 0;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 30px;
+    font-weight: 900;
+    background: black;
+}
+.text:hover .social-icon {
+    transform: translateY(0);
+}
+.social-icon  {
+    padding: 10px 10px;
+    transform: rotate(45deg);
+    transform: translateY(500px);
+}
+.social-icon svg {
+    width: 35px;
+    height: 35px;
+    fill: black;
+}
+
+.icon {
+    display: flex;
+    gap: 3px;
+    transform: translateY(500px)
+}
+.footer-list {
+    border: 1px solid red;
+    margin: 1px 0;
+    padding: 5px 5px;
+}
+.footer-list svg {
+    fill: #01c7dd;
+    transform: rotate(-45deg);
+    width: 35px;
+    height: 35px;
+    
+}
+.footer-list a {
+    display: block;
+} */
+
+
+/* !-------------------------- */
+
+.fixed-menu {
+    position: fixed;
+    bottom: 0;
+    right: 100px;
+    /* background: blue; */
+    width: 300px;
+    transform: translateY(calc(100% - 42px));
+    transition: all .7s linear;
+}
+
+.fixed-menu:hover {
+    transform: translateY(0);
+}
+
+.fixed-menu-tittle {
+    font-size: 32px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #7f75a5;
+    background: rgb(61, 54, 48);
+}
+
+.fixed-menu-box {
+    background: rgb(220, 210, 202);
+    padding: 50px 0;
+}
+.fixed-menu-list {
+    width: 140px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 5px;
+    margin: 0 auto;
+    justify-content: center;
+    /* background: red; */
+    transform: rotate(45deg);
+}
+
+.fixed-menu-list li {
+    border: 1px solid rgb(61, 54, 48);
+}
+.fixed-menu-list li a {
+    display: block;
+    font-size: 8px;
+    padding: 5px;
+}
+
+.fixed-menu-list li :hover svg{
+    fill: #fff;
+    /* transform: rotate(360deg); */
+}
+.fixed-menu-icon {
+    width: 50px;
+    height: 50px;
+    fill: #7f75a5;
+    transform: rotate(-45deg);
+    /* transition: all 2s linear; */
 }
