@@ -101,9 +101,7 @@
     padding: 10px 0;
     font-size: 25px;
 }
-.second-ul  a:hover {
-    /* color: #303839; */
-}
+
 .second-ul > li:hover .site-amelia {
     display: block;
 }
@@ -551,7 +549,22 @@
     font-weight: 900;
     color: #7f75a5;
     background: rgb(61, 54, 48);
+    animation: test-animation .1s linear infinite .3s;
 }
+
+@keyframes test-animation {
+    100% {
+        transform: translateY(15px);
+    }
+}
+.fixed-menu-tittle:hover{
+    /* color: red; */
+    animation: test-animation none;
+} 
+.fixed-menu-box:hover{
+    animation: test-animation none;
+} 
+
 
 .fixed-menu-box {
     background: rgb(220, 210, 202);
